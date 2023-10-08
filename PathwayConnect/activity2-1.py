@@ -55,7 +55,7 @@ celsius = (fahrenheit - 32) * 5/9
 print(f'The temperature in celsius is {celsius:.1f}')
 
 print()
-
+12
 #Meals, children, adults and tax input block
 childs_meal = float(input(f"What is the price of a child's meal? "))
 adults_meal = float(input(f'What is the price of an adults meal? '))

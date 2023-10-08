@@ -65,8 +65,8 @@ a .card {
 .card-content {
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+  justify-content: center;
 }
 
 .card-content a,
@@ -78,6 +78,10 @@ a .card {
   display: grid;
   gap: 10px;
   justify-content: center;
+}
+
+#two-column-section {
+  justify-content: space-around;
 }
 
 @media (max-width: 599px) {
