@@ -264,6 +264,7 @@ p {
 #content {
   position: relative;
   padding: 0 0 40px;
+  margin: auto;
 }
 .bg-content {
   background: url(../img/bg-content.jpg) 50% 50%;

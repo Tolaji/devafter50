@@ -1,3 +1,8 @@
+#column-section {
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   height: 15rem;
   border-radius: 10px;
@@ -100,8 +105,6 @@ a .card {
 @media (min-width: 960px) {
   .card-container {
     grid-template-columns: repeat(4, 1fr);
-    flex-direction: column;
-    align-items: center;
   }
 }
 
