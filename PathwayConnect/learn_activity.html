@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DevAfter50 | Always Reaching | Learn_Activity</title>
+    <title>DevAfter50 | Always Reaching | Learn Activity</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-
     <link
       rel="stylesheet"
       href="../css/bootstrap.css"
@@ -31,7 +32,6 @@
     />
 
     <link rel="stylesheet" href="../css/index.css" type="text/css" />
-    <!--<link rel="stylesheet" href="../css/card.css" type="text/css">-->
 
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
@@ -63,7 +63,6 @@
 
   <body>
     <div  class="spinner"></div>
-
       <header>
         <div class="container clearfix">
           <div class="row">
@@ -110,94 +109,33 @@
             <div class="row">
               <div class="span12">
                 <div class="block-404">
-                  <section class="box-404">
+                  <div class="box-404">
+
                     <h3>Learn Activity</h3>
+
                     
 
-                        <!-- Section to handle py-script presentation-->
-                        <section id="two-column-section">
-                            <div class="column">
-                                <!-- prettier-ignore -->
-                                <!-- Present unformatted python code-->
-                                <pre>
-                                    <code class="python">
-num_cookies = int(input("Enter the number of cookies: "))
-num_people = int(input("Enter the number of people: "))
-cookies_per_person = num_cookies / num_people
-print("Each person will get", cookies_per_person, "cookies.")
+                      <!-- Section to handle py-script presentation-->
+                      <section class="two-column-section">
+                        <div class="column">
+                          <!-- prettier-ignore -->
+                          <!-- Present unformatted python code-->
+                          <pre>
+                          <code class="python"></code>
+                          </pre>
 
-"""
-Author: Brother Burton
-
-Purpose: Practice using mathematical expressions.
-"""
-
-age = int(input("How old are you? "))
-next_year_age = age + 1
-print(f"On your next birthday, you will be {next_year_age}.")
-
-# Note that we could do the addition right in the display if we wanted:
-print(f"On your next birthday, you will be {age + 1}.")
-
-print() # This prints a blank line
-
-cartons = int(input("How many egg cartons do you have? "))
-eggs = cartons * 12
-print(f"You have {eggs} eggs")
-
-# In the next example, to create a blank line I included \n at the beginning of the string
-cookies = int(input("\nHow many cookies do you have? "))
-people = int(input("How many people are there? "))
-
-cookies_per_person = cookies / people
-
-print(f"Each person may have {cookies_per_person} cookies")
-                                    </code>
-                                </pre>
-
-                                <!-- Print "Loading Page" then clear after 30 seconds -->
-                                <br/>
-                                    <div id="loading">Loading page...</div>
-                                <br/>
-                                                        
-                                <!-- div to handle py-script running python code-->
-                                <div class="column">
-                                    <!-- prettier-ignore -->
-                                    <py-script src="">num_cookies = int(input("Enter the number of cookies: "))
-num_people = int(input("Enter the number of people: "))
-cookies_per_person = num_cookies / num_people
-print("Each person will get", cookies_per_person, "cookies.")
-
-"""
-Author: Brother Burton
-
-Purpose: Practice using mathematical expressions.
-"""
-
-age = int(input("How old are you? "))
-next_year_age = age + 1
-print(f"On your next birthday, you will be {next_year_age}.")
-
-# Note that we could do the addition right in the display if we wanted:
-print(f"On your next birthday, you will be {age + 1}.")
-
-print() # This prints a blank line
-
-cartons = int(input("How many egg cartons do you have? "))
-eggs = cartons * 12
-print(f"You have {eggs} eggs")
-
-# In the next example, to create a blank line I included \n at the beginning of the string
-cookies = int(input("\nHow many cookies do you have? "))
-people = int(input("How many people are there? "))
-
-cookies_per_person = cookies / people
-
-print(f"Each person may have {cookies_per_person} cookies")
-                                    </py-script>
-                                </div>
-                        </section>
-                   
+                          <!-- Print "Loading Page" then clear after 30 seconds -->
+                          <br/>
+                          <div id="loading">Loading page...</div>
+                          <br/>
+                                                
+                                              <!-- div to handle py-script running python code-->
+                                              <div class="column">
+                                                <!-- prettier-ignore -->
+                                                <py-script src="">#Example</py-script>
+                        </div>
+                      </section>
+                  </div>
 
                   <script src="../js/script.js"></script>
                 </div>

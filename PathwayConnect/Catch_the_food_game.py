@@ -1,10 +1,9 @@
 
-import cs50
 import random
 import pygame
 import cv2
 
-Initialize Pygame
+#Initialize Pygame
 pygame.init()
 
 # Set up game window
@@ -100,4 +99,4 @@ while True:
     win.fill((255, 255, 255))
     win.blit(player_img, player_rect)
     win.blit(food_img, food_rect)
-    score_text = font.render("Score: " + str(score)), True
+    score_text = font.render("Score: " + str(score), True)

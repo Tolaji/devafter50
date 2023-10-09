@@ -80,25 +80,28 @@ a .card {
   justify-content: center;
 }
 
-#two-column-section {
-  justify-content: space-around;
-}
-
 @media (max-width: 599px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 960px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .card-container {
     grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    align-items: center;
   }
 }
 
