@@ -116,54 +116,87 @@
                     
 
                       <!-- Section to handle py-script presentation-->
-                      <section id="column-section">
-                        <div class="column">
-                          <!-- prettier-ignore -->
-                          <!-- Present unformatted python code-->
-                          <pre>
-                          <code class="python">class  FuelEfficiency:
-    def __init__(self, start, end, gallons):
-        self.start = start
-        self.end = end
-        self.gallons = gallons
-        
-    def miles_per_gallon(self):        
-      return (self.end - self.start)/self.gallons
-    
-    def lp100k_from_mpg(self, mpg):  
-      return 235.215/mpg
-    
-def main():
-    
-    start = float(input('Enter starting odometer value in miles: '))
-    end = float(input('Enter ending odometer value in miles: '))
-    gallons = float(input('Enter amount of fuel in gallons: '))
-    
-    calculator = FuelEfficiency(start, end, gallons)
-    
-    mpg = calculator.miles_per_gallon()
-    lp100k = calculator.lp100k_from_mpg(mpg)
-    
-    print(f"Fuel Efficiency in Miles per Gallon: {mpg:.2f} mpg")
-    print(f"Fuel Efficiency in Liters per 100 Kilometers: {lp100k:.2f} lp100k")
-        
-
-main()
-    
-    </code>
+                      <!-- Section to handle py-script presentation-->
+                  <section id="column-section">
+                    < class="column">
+                    <!-- prettier-ignore -->
+                    <!-- Present unformatted python code-->
+                    <pre>
+                          <code class="python">#Example</code>
                           </pre>
 
-                          <!-- Print "Loading Page" then clear after 30 seconds -->
-                          <br/>
-                          <div class="loading">Loading page...</div>
-                          <br/>
-                                                
-                                              <!-- div to handle py-script running python code-->
-                                              <div class="column">
-                                                <!-- prettier-ignore -->
-                                                <py-script src="">#Example</py-script>
-                        </div>
-                      </section>
+                    <section>
+                      <div class="loading">Loading page...</div>
+                      <div class="loaded">Page loaded</div>
+
+                      <script>
+                        document.addEventListener(
+                          "DOMContentLoaded",
+                          function () {
+                            var loadingDiv = document.querySelector(".loading");
+                            var loadedDiv = document.querySelector(".loaded");
+
+                            setTimeout(function () {
+                              loadingDiv.style.display = "none";
+                              loadedDiv.style.display = "block";
+
+                              setTimeout(function () {
+                                loadedDiv.style.display = "none";
+                              }, 20000); // Disappear after 20 seconds
+                            }, 20000); // Display "Page loaded" after 20 seconds
+                          }
+                        );
+                      </script>
+                    </section>
+
+                    <section>
+                      <!-- prettier-ignore -->
+                      <script type="text/python" id="embedded-code">#Example
+import numpy as np
+import sys
+sys.stdout.write('Embedded Python code is ready.')
+                      </script>
+                      <br />
+
+                      <p>
+                        To run the above Embedded Python Code, click:
+                        <button
+                          onclick="executeEmbeddedCode()"
+                          style="font-weight: bold"
+                        >
+                          RUN EMBEDDED CODE
+                        </button>
+                      </p>
+
+                      <div>
+                        <textarea
+                          id="code"
+                          rows="10"
+                          cols="50"
+                          style="width: 800px"
+                        ></textarea>
+                      </div>
+
+                      <p>
+                        To run python code typed or pasted in the TextArea,
+                        click:
+                        <button
+                          onclick="executeCode()"
+                          style="font-weight: bold"
+                        >
+                          RUN CODE
+                        </button>
+                      </p>
+
+                      <script>
+                        function executeCode() {
+                          const code = document.getElementById("code").value;
+                          const output = pyodide.runPython(code);
+                          console.log(output);
+                          // Display or process the output as required
+                        }
+                      </script>
+                    </section> 
                   </div>
 
                   <script src="../js/script.js"></script>

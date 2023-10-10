@@ -449,6 +449,11 @@ p {
   float: left;
   margin: 0 0 30px 30px;
 }
+ul.list-photo img {
+  width: 120px;
+  height: 87px;
+}
+
 /*----------- .portfolio --------------*/
 .portfolio {
   list-style: none outside;

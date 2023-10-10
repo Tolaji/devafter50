@@ -135,7 +135,7 @@
 
                   <!-- Section to handle py-script presentation-->
                   <section id="column-section">
-                    < class="column">
+                    <div class="column">
                     <!-- prettier-ignore -->
                     <!-- Present unformatted python code-->
                     <pre>
@@ -1017,11 +1017,12 @@ import numpy as np
 import sys
 sys.stdout.write('Embedded Python code is ready.')
                       </script>
+                      <br />
 
                       <p>
                         To run the above Embedded Python Code, click:
                         <button
-                          onclick="executeembeddedCode()"
+                          onclick="executeEmbeddedCode()"
                           style="font-weight: bold"
                         >
                           RUN EMBEDDED CODE
