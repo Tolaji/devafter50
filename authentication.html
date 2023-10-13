@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DevAfter50 | Always Reaching | Authentication</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="css/responsive.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="/css/authentication.css" type="text/css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/frontend_disable.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+      jQuery(window).load(function () {
+        jQuery(".spinner").animate(
+          {
+            opacity: 0,
+          },
+          1000,
+          "easeOutCubic",
+          function () {
+            jQuery(this).css("display", "none");
+          }
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="spinner"></div>
+    <header>
+      <div class="container clearfix">
+        <div class="row">
+          <div class="span12">
+            <div class="navbar navbar_">
+              <div class="container">
+                <h1 class="brand brand_">
+                  <a href="index.html"
+                    ><img alt="" src="img/devafter50.png" />
+                  </a>
+                </h1>
+                <a
+                  class="btn btn-navbar"
+                  data-toggle="collapse"
+                  data-target=".nav-collapse_"
+                  >Menu <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse nav-collapse_ collapse">
+                  <ul class="nav sf-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="sub-menu">
+                      <a href="epiphany.html">Epiphany</a>
+                      <ul>
+                        <li><a href="pathway.html">Pathway</a></li>
+                        <li><a href="byu-1.html">BYU-I</a></li>
+                        <li><a href="byu-2.html">BYU-II</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="reaching.html">Reaching</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-content">
+      <div id="content">
+        <div class="container">
+          <div class="row">
+                <div class="span12">
+                    <div class="block-404">
+                        <div class="box-404">
+                            <h3></h3>
+                            
+                            
+                                <section>
+                                    
+                                    <div class="containers">
+                                        
+                                        <div><p>Registering or logging in provides you access to a range of personal projects, these projects are based on ideas nursed over the years and are all bound for real world production. By creating an account, you afford us the opportunity to know you better, to allow you gain exclusive access to a wealth of valuable content, personalized exchange of recommendations, and the ability to interact with our community. This ensures that you receive the most relevant and up-to-date information on our platform. Additionally, logging in allows you to bookmark your favorite articles, track your progress, and seamlessly pick up where you left off. It also enables us to provide you with timely updates and notifications about updates on new ideas, events, resources, and sometimes, special offers. Rest assured, your information is kept secure and your privacy is of utmost priority. Joining in empowers you to make the most out of your experience and unlocks a world of valuable insights. </p>
+                                        </div>
+                                        <div class="tabs">
+                                            <button id="loginTab" class="active">Login</button>
+                                            <button id="registerTab">Register</button>
+                                        </div>
+
+                                        <div id="loginForm" class="form active">
+                                            <h3 class="size_color">Login</h3>
+                                                <input
+                                                    type="text"
+                                                    id="loginUsername"
+                                                    placeholder="Username"
+                                                    required
+                                                />
+                                                <input
+                                                    type="password"
+                                                    id="loginPassword"
+                                                    placeholder="Password"
+                                                    required
+                                                />
+                                            <button type="submit">Login</button>
+                                        </div>
+
+                                        <div id="registerForm" class="form">
+                                            <h3 class="size_color">Register</h3>
+                                                <input
+                                                    type="text"
+                                                    id="registerUsername"
+                                                    placeholder="Username"
+                                                    required
+                                                />
+                                                <input
+                                                    type="email"
+                                                    id="registerEmail"
+                                                    placeholder="Email"
+                                                    required
+                                                />
+                                                <input
+                                                    type="password"
+                                                    id="registerPassword"
+                                                    placeholder="Password"
+                                                    required
+                                                />
+                                            <button type="submit">Register</button>
+                                        </div>
+                                    </div>
+                                <script src="js/auth.js"></script>
+                                </section>
+
+
+                                
+                                
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container clearfix">
+        <ul class="list-social pull-right">
+          <li><a class="icon-1" href="#"></a></li>
+          <li><a class="icon-2" href="#"></a></li>
+          <li><a class="icon-3" href="#"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+        <div class="privacy pull-left">
+          Signed:
+          <a href="404.html">IdeasEncore.com</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
