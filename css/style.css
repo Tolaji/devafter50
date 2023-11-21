@@ -581,6 +581,19 @@ ul.list-photo img {
   color: #fff;
 }
 
+/* ---------- WDD130 Parallax ----------*/
+
+.parallax .wdd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1; /* Adjust as needed */
+}
+
 /*------ mail & address------- */
 .address-1 {
   overflow: hidden;
